@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="p1.jpeg" class="slide">
+        </div>
+        <div class="option flex">
+          <img src="p1.jpeg" onclick="img('p1.jpeg')">
+          <img src="p2.jpeg" onclick="img('p2.jpeg')">
+          <img src="p3.jpeg" onclick="img('p3.jpeg')">
+          <img src="p4.jpeg" onclick="img('p4.jpeg')">
+          <img src="p5.jpeg" onclick="img('p5.jpeg')">
+          <img src="p6.jpeg" onclick="img('p6.jpeg')">
+        </div>
+      </div>
+      <div class="right">
+        <h3>Kitchen Utensils</h3>
+        <h4> <small>$</small>1000.99 </h4>
+        <p>A kitchen utensil is a small hand held tool used for food preparation. Common kitchen tasks include cutting food items to size, heating food on an open fire or on a stove, baking, grinding, mixing, blending, and measuring; different utensils are made for each task. </p>
+        <h5>Color-silver maroon</h5>
+        <div class="color flex1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h5>Number</h5>
+        <div class="add flex1">
+          <span>-</span>
+          <label>1</label>
+          <span>+</span>
+        </div>
+
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>
